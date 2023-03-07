@@ -89,7 +89,7 @@ class MainActivity : AppCompatActivity() {
         val body: RequestBody = RequestBody.create(JSON,jsonBody.toString())
         val request: Request = Request.Builder()
             .url("https://api.openai.com/v1/completions")
-            .header("Authorization", "Bearer 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")
+            .header("Authorization", "Bearer <YOUR_API_KEY>")
             .post(body)
             .build()
 
