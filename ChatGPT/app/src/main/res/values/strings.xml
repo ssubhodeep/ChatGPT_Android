@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ChatGPT</string>
+    <string name="send">SEND</string>
+    <string name="try_chat_gpt_now_n_ask_me_anything">Try ChatGPT now\n ask me anything!!</string>
+</resources>
