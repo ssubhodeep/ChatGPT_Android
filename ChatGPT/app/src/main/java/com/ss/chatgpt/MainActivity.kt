@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
             jsonBody.put("max_tokens", 4000)
             jsonBody.put("temperature", 0)
         } catch (e: JSONException) {
-            e.printStackTrace()
+            throw e
         }
 
         //okhttp
