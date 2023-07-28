@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        throw NullPointerException("This is a test crash");
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         mBinding?.apply {
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             //setup recycler view
             mAdapter = MessageAdapter()
             recyclerView.adapter = mAdapter
-            val layoutManager: LinearLayoutManager = LinearLayoutManager(this@MainActivity)
+            val layoutManager = LinearLayoutManager(this@MainActivity)
             layoutManager.stackFromEnd = true
             recyclerView.layoutManager = layoutManager
 
