@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        throw RuntimeException("Test")
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         mBinding?.apply {
